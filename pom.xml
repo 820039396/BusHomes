@@ -17,6 +17,7 @@
 	<modules>
 		<module>j1902_springcloud_server_9090</module>
 		<module>j1902_springcloud_produce_login_10001</module>
+		<module>j1902_springcloud_consumer_login_10002</module>
 	</modules>
 
 	<properties>

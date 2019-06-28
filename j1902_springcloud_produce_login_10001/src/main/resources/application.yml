@@ -6,4 +6,4 @@ eureka:
       defaultZone: http://10.12.159.122:9090/eureka
 spring:
   application:
-    name: produce-login
+    name: xp-produce-login

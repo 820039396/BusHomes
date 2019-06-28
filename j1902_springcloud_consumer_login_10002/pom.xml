@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.qf.j1902</groupId>
-	<artifactId>j1902_springcloud_produce_login_10001</artifactId>
+	<artifactId>j1902_springcloud_consumer_login_10002</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>j1902_springcloud_produce_login_10001</name>
+	<name>j1902_springcloud_consumer_login_10002</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -37,11 +37,6 @@
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 
-		<!--添加lombok依赖-->
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
