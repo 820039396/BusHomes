@@ -9,26 +9,32 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.qf.j1902</groupId>
-	<artifactId>j1902_springcloud</artifactId>
+	<artifactId>j1902_springcloud_produce_zuul_10000</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>j1902_springcloud</name>
+	<name>j1902_springcloud_produce_zuul_10000</name>
 	<description>Demo project for Spring Boot</description>
-
-	<modules>
-		<module>j1902_springcloud_server_9090</module>
-		<module>j1902_springcloud_produce_login_10001</module>
-		<module>j1902_springcloud_consumer_login_10002</module>
-		<module>j1902_springcloud_produce_zuul_10000</module>
-	</modules>
 
 	<properties>
 		<java.version>1.8</java.version>
+		<spring-cloud.version>Greenwich.SR1</spring-cloud.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
 		</dependency>
 
 		<dependency>
@@ -37,6 +43,18 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
 		<plugins>

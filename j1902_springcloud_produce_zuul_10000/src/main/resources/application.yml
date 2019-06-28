@@ -1,0 +1,15 @@
+
+server:
+  port: 10000
+spring:
+  application:
+    name: server-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://10.12.159.122:9090/eureka
+zuul:
+  routes:
+    api-a:
+      path: /api-a/*
+      serviceId: xp-produce-login
