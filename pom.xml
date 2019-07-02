@@ -19,6 +19,7 @@
 		<module>j1902_springcloud_produce_login_10001</module>
 		<module>j1902_springcloud_consumer_login_10002</module>
 		<module>j1902_springcloud_produce_zuul_10000</module>
+		<module>j1902_springcloud_produce_redis_10003</module>
 	</modules>
 
 	<properties>

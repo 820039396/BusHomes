@@ -21,4 +21,8 @@ public class User {
     private String remark;
     private String dept;
 
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 }

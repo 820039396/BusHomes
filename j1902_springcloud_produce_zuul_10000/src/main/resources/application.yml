@@ -12,4 +12,4 @@ zuul:
   routes:
     api-a:
       path: /api-a/*
-      serviceId: xp-produce-login
+      serviceId: xp-consumer-login
