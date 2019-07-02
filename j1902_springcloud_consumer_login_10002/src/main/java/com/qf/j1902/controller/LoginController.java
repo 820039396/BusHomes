@@ -27,6 +27,7 @@ public class LoginController {
     @RequestMapping(value = "login")
     @ResponseBody
     public String IsLogin(@RequestParam("name")String name, @RequestParam("password")String password){
+        
         return loginService.ifLogin(name,password);
     }
 }

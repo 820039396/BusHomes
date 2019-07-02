@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * Created by Administrator on 2019/6/29.
  */
-@FeignClient(value = "server-zuul",fallback = LoginServiceimpl.class)
+@FeignClient(value ="server-zuul",fallback = LoginServiceimpl.class)
 public interface LoginService {
     @RequestMapping(value = "/api-a/login")
     public String ifLogin(@RequestParam("name") String name, @RequestParam("password") String password);
